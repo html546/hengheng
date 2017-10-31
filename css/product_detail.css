@@ -1,0 +1,147 @@
+.beijing{
+	background: url(../img/1-4底纹1.png) no-repeat;
+	background-size: cover;
+}
+.zuotu{
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+.zhutu{
+	background: url(../img/1-1产品图1.png) no-repeat;
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+}
+.youwen{
+	margin-top: 100px;
+	line-height: 3.5;
+	margin-bottom: 80px;
+	position: relative;
+}
+.youwen h4,.youwen p{
+	font-size: 22px;
+}
+.youwen>p:nth-child(2) span{
+	color: #da200b;
+}
+.youwen button{
+	width: 120px;
+	height: 40px;
+	color: #fff;
+	background: #d7210c;
+	line-height: 40px;
+}
+.jishu button{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #999;
+	color: #999;
+	text-align: center;
+	background: none;
+}
+.jishu span:nth-child(3){
+	color: #d7210c;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+/*.jishu span:nth-child(4){
+	border-right: 1px solid #999;
+}*/
+.tuwen{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+.tuwen h3{
+	text-align: center;
+}
+.tuwen p{
+	width: 100%;
+	margin-left: 100px;
+	color: #b91c31;
+	font-size: 36px;
+}
+.tuwen img:nth-of-type(2){
+	margin-bottom: 10px;
+}
+.tuwen img:last-of-type{
+	margin-bottom: 100px;
+}
+.xiadan{
+	width: 550px;
+	height: 530px;
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 15px;
+	top: 350px;
+	z-index: 100;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+}
+.xiadan p{
+	margin: 0;
+	font-size: 14px;
+}
+.xiadan p:first-child{
+	font-size: 12px;
+	text-align: center;
+}
+.xiadan p:not(:first-child){
+	margin-left: 95px;
+}
+.xiadan button{
+	margin-left: 160px;
+	margin-top: 25px;
+}
+.xiadan>p input{
+	width: 160px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-indent: 10px;
+	border: 1px solid #ccc;
+}
+.xiadan>p:nth-child(4) input{
+	width: 260px;
+	height: 60px;
+	padding-bottom: 30px;
+}
+.xinxilan{
+	display: flex;
+	flex-direction: column;
+	width: 390px;
+	height: 240px;
+	margin-left: 40px;
+	line-height: 2;
+	border-top: 1px solid #ccc;
+	margin-top: 20px;
+}
+.xinxilan h5{
+	text-align: center;
+}
+.xinxilan p{
+	text-align: left;
+}
+.xinxilan>p input{
+	width: 200px;
+	border: none;
+	background: none;
+}
+.xinxilan>p:nth-child(5) input,.xinxilan>p:nth-child(6) input{
+	width: 50px;
+	text-align: center;
+}
+.qiehuan{
+	display: none;
+}

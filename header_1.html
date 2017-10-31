@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--导航-->
+		<div class="footer_beijing">
+			<div class="container-fluid">
+				<div class="container">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand" href="#">
+					      	 <img src="img/navlogo.png"/>
+					      	 <ul>
+					      	 	<li>成都哼哼科技有限公司</li>
+					      	 	<li>Chengdu hum Technology Co.,Ltd</li>
+					      	 </ul>
+					      </a>
+					    </div>
+					
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav yidong">
+					        <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+					        <li><a href="#">关于我们</a></li>
+					        <li><a href="#">产品中心</a></li>
+					        <li><a href="#">养殖基地</a></li>
+					        <li><a href="#">新闻中心</a></li>
+					        <li><a href="#">联系我们</a></li>
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+				</div>
+			</div>
+		    <script>
+		    	$(function(){
+		    		$('.yidong li a').hover(function(){
+		    			$(this).parent('li').addClass('active').siblings('li').removeClass('active');
+		    		})
+		    	})
+		    </script>
+	</div>
+	</body>
+</html>

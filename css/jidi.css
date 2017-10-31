@@ -1,0 +1,15 @@
+.shipin video{
+	margin: 100px 0px 60px 80px;
+}
+.shipinzu div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.shipinzu div p{
+	text-align: center;
+}
+.beijing2{
+	background: url(../beijingpicture/视频播放.png) no-repeat center;
+	height: auto;
+}

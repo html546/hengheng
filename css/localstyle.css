@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.ctn{
+	text-align: center;
+}
+/*关于我们    内容部分*/
+.marginTop_99{
+	margin-top: 99px;
+}
+.marginTop_10{
+	margin-top: 10px;
+}
+.marginTop_77{
+	margin-top: 77px;
+}
+.pInfo{
+    line-height: 25px;
+}

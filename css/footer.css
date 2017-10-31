@@ -1,0 +1,26 @@
+.footer{
+	background: #eee;
+	height: 360px;
+}
+.shouye,.lianxi{
+	padding: 20px 0px;
+}
+.shouye li,.lianxi li{
+	padding: 20px 0px;
+}
+.shouye li:first-child a{
+	color: #009da6;
+}
+ul.lianxi li img+span{
+	margin-left: 10px;
+}
+.dingwei,.gongzhong{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.dingwei+img,.gongzhong+img{
+	margin-left: 25px;
+}

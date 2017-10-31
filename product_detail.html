@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/product_detail.css" />
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.zhutu2{
+				background: url(img/xiaozhu_03.png) no-repeat;
+				background-size: 480px 400px;
+				width: 480px;
+				height: 400px;
+			}
+			.youwen2{
+				margin-top: 100px;
+				line-height: 3.5;
+				margin-bottom: 80px;
+				position: relative;
+			}
+			.youwen2 h4{
+				font-size: 28px;
+				margin-top: 54px;
+			}
+			.youwen2 p{
+				font-size: 26px;
+				line-height: 1.5;
+				font-weight: normal;
+			}
+			.youwen2 p:nth-of-type(2) span{
+				color: red;
+				font-size: 40px;
+			}
+			.youwen2 button{
+				width: 214px;
+				height: 52px;
+				background: #b51811;
+				color: #fff;
+				text-align: center;
+				line-height: 52px;
+				margin-bottom: 5px;
+			}
+			.youwen2{
+				border: 1px solid #ccc;
+				border-left: none;
+			}
+		</style>
+		<!--<script src="js/vue.js"></script>-->
+	</head>
+	<body>
+		<iframe src="header_1.html" width="100%" height="104" frameborder="0" scrolling="no"></iframe>
+		<div class="container-fluid beijing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 zuotu">
+						<!--<img src="img/2-2图片1_03.png"/>-->
+						<div class="zhutu2"></div>
+					</div>
+					<div class="col-md-6 youwen2">
+						<h4>整猪认养  生态散养巴马香猪</h4>
+						<p style="font-size: 26px;line-height: 1.5;">认养(2-3个月) 仔猪598/头+1200(6个月生活费)+200综合服务费(屠宰分割、包装物流费)=1998元/头</p>
+						<p><span>￥1998</span>/头</p>
+						<p>已有63人认养</p>
+						<button class="danji">立即认养</button>
+						<div class="xiadan qiehuan">
+							<p>请填写您的资料我们会尽快跟您联系发货</p>
+							<p>姓名: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请输入您的姓名"/></p>
+							<p>电话: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请填写您的电话"/></p>
+							<p>收货地址: <input type="text" placeholder="请填写您的收货地址"/></p>
+							<button>确认下单</button>
+							<div class="xinxilan">
+								<form action="">
+									<h5>订单详情</h5>
+									<p><span>姓名:</span><input type="text" disabled="disabled" value="嘟嘟生态散养现杀鲜猪肉后腿肉"/></p>
+									<p><span>单价:</span>￥<input type="text" disabled="disabled" v-bind:value="price"/></p>
+									<p><span>规格:</span><input type="text" disabled="disabled" value="选啥就是啥"/></p>
+									<p><span>数量:</span><input type="text" disabled="disabled" v-bind:value="num"/>斤</p>
+									<p><span>订单金额:</span>￥<input type="text" disabled="disabled" v-bind:value="total"/>元</p>
+									<p><span>交易方式:</span>线下支付</p>
+									<p><span>下单日期:</span>2017-6-10 08:30</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row tuwen">
+					<h3>图文详情</h3>
+					<!--<img src="img/2-2产品中心详情1_03.png" alt="" />
+					<p>黑猪的生活环境</p>
+					<img src="img/2-2产品中心详情2_03.png" alt=""/>
+					<img src="img/2-2产品中心详情2_06.png" alt="" />-->
+					<img src="img/222.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+		<iframe src="footer.html" width="100%" height="360" frameborder="0" scrolling="no"></iframe>
+		<script>
+					$(function(){
+						$('.danji').click(function(){
+							$('.xiadan').toggleClass('qiehuan');
+						})
+					})
+		</script>
+	</body>
+</html>

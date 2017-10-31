@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/product_detail.css" />
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<iframe src="header_1.html" width="100%" height="104" frameborder="0" scrolling="no"></iframe>
+		<div class="container-fluid beijing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 zuotu">
+						<!--<img src="img/2-2图片1_03.png"/>-->
+						<div class="zhutu"></div>
+					</div>
+					<div class="col-md-6 youwen">
+						<h4>嘟嘟生态散养现杀鲜猪肉后腿肉</h4>
+						<p>价格:<span>￥{{price}}</span>/500g</p>
+						<p>规格:不知道是什么规格呢</p>
+						<p class="jishu">
+							<span>数量:&nbsp;&nbsp;</span><button v-on:click="min">-</button><span>{{num}}</span><button v-on:click="add">+</button>&nbsp;&nbsp;&nbsp;斤
+						</p>
+						<button class="danji">立即下单</button>
+						<div class="xiadan qiehuan">
+							<p>请填写您的资料我们会尽快跟您联系发货</p>
+							<p>姓名: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请输入您的姓名"/></p>
+							<p>电话: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请填写您的电话"/></p>
+							<p>收货地址: <input type="text" placeholder="请填写您的收货地址"/></p>
+							<button>确认下单</button>
+							<div class="xinxilan">
+								<h5>订单详情</h5>
+								<p><span>商品:</span><input type="text" disabled="disabled" value="嘟嘟生态散养现杀鲜猪肉后腿肉"/></p>
+								<p><span>单价:</span>￥<input type="text" disabled="disabled" v-bind:value="price"/></p>
+								<p><span>规格:</span><input type="text" disabled="disabled" value="选啥就是啥"/></p>
+								<p><span>数量:</span><input type="text" disabled="disabled" v-bind:value="num"/>斤</p>
+								<p><span>订单金额:</span>￥<input type="text" disabled="disabled" v-bind:value="total"/>元</p>
+								<p><span>交易方式:</span>线下支付</p>
+								<p><span>下单日期:</span>2017-6-10 08:30</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(function(){
+						$('.danji').click(function(){
+							$('.xiadan').toggleClass('qiehuan');
+						})
+					})
+					var vm=new Vue({
+						el:'.youwen',
+						data:{
+							num:1,
+							price:29
+						},
+						methods:{
+							add:function(){
+								this.num+=1
+							},
+							min:function(){
+								if(this.num<=1) return;
+								this.num-=1
+							}
+						},
+						computed:{
+							total:function(){
+								return this.num*this.price
+							}
+						}
+					})
+				</script>
+				<div class="row tuwen">
+					<h3>图文详情</h3>
+					<img src="img/2-2产品中心详情1_03.png" alt="" />
+					<p>黑猪的生活环境</p>
+					<img src="img/2-2产品中心详情2_03.png" alt=""/>
+					<img src="img/2-2产品中心详情2_06.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<iframe src="footer.html" width="100%" height="360" frameborder="0" scrolling="no"></iframe>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.xinwen{
+	background: url(../img/1-4底纹1.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 1320px;
+}
+.xinwen ul.title{
+	margin: 0 auto;
+	height: 50px;
+	width: 230px;
+	margin-top: 90px;
+}
+.xinwen ul.title li{
+	float: left;
+	height: 50px;
+	width: 115px;
+	line-height: 50px;
+	text-align: center;
+}
+.xinwen ul.title li.active{
+	color: #009ea7;
+	border-bottom: 4px solid #009ea7;
+}
+.wenzhang p{
+	line-height: 1.8;
+}
+.wenzhang h4{
+	margin-bottom: 25px;
+}
+.wenzhang h4:hover{
+	color: #009fa9;
+}
+.wenzhang{
+	margin-bottom: 60px;
+}
+.xinwen .container .row .wenzhang:nth-child(2){
+	margin-top: 40px;
+}

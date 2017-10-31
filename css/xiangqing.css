@@ -1,0 +1,22 @@
+.xinwen article h3,.xinwen article p:nth-child(2){
+	text-align: center;
+}
+.xinwen article h3{
+	margin-top: 50px;
+}
+.xinwen article p:nth-child(2){
+	margin-bottom: 35px;
+}
+.xinwen article p:nth-child(3){
+	line-height: 2.5;
+	margin-bottom: 45px;
+}
+.xinwen article img{
+	position: relative;
+	left: 50%;
+	margin-left: -340px;
+}
+.xinwen article p:last-child{
+	margin-top: 50px;
+	line-height: 2.5;
+}

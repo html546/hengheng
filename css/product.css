@@ -1,0 +1,22 @@
+a{
+	text-decoration: none;
+}
+.fudong{
+	display: inline-block;
+}
+.yanse{
+	color: #de2f1e;
+}
+.fudong+span{
+	line-height: 56px;
+}
+.diyi{
+	margin-top: 100px;
+}
+.disi{
+	margin-bottom: 40px;
+}
+.beijing1{
+	background: url(../beijingpicture/其他产品背景.png) no-repeat;
+	height: auto;
+}

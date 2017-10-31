@@ -1,0 +1,16 @@
+.container-fluid{
+	background: url(../img/1-4底纹1.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 1320px;
+}
+.xinxi{
+	width: 570px;
+	height: 440px;
+	margin: 123px auto 80px; 
+}
+.xinxi p{
+	font-size: 30px;
+	line-height: 2;
+	font-weight: normal;
+}

@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+/*导航样式*/
+.footer_beijing{
+	width: 100%;
+	height: auto;
+	/*background: url(../img/1-1banner.png);*/
+}
+.footer_beijing>.container-fluid{
+	background: #fff;
+	opacity: .7;
+}
+.navbar.navbar-default{
+	background: none;
+	border: none;
+	margin-bottom: 0px;
+	min-height: 100px;
+}
+.navbar-brand{
+	display: block;
+	height: 100px;
+	width: 350px;
+}
+.navbar-brand img{
+	float: left;
+}
+.navbar-brand img+ul{
+	margin-top: 22px;
+}
+.navbar-brand img+ul li:first-child{
+	margin-left: 10px;
+	font-size: 20px;
+	color: #302e2f;
+}
+.navbar-brand img+ul li:nth-child(2){
+	margin-left: 10px;
+	color: #656462;
+	font-size: 14px;
+}
+.container-fluid > .navbar-collapse{
+	min-height: 100px;
+}
+.navbar-nav > li > a{
+	padding: 40px 36px;
+}
+@media screen and (min-width: 768px) and (max-width:960px){
+	.navbar-nav > li >a{
+		padding: 10px 5px!important;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.navbar-nav > li >a{
+		padding: 10px 5px!important;
+	}
+}
+.navbar-nav > li.active> a{
+	color: #10a3ab!important;
+	border-bottom: 4px solid #10a3ab;
+	background: none!important;
+}
